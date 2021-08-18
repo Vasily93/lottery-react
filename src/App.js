@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Lottery from './Lottery';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Lottery</h1>
+      <Lottery 
+        name="Monthly lottery"
+        max={40}
+        numOfBalls={8}
+      />
+      <Lottery
+        name="Weely lottery"
+        max={10}
+        numOfBalls={5}/>
     </div>
   );
 }
